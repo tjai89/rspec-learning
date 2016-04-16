@@ -16,8 +16,5 @@ describe "adding a new task" do
       click_on("Up")
     end
     expect(current_path).to eq(project_path(projects(:bluebook)))
-    within("#task_2") do
-      expect(page).to have_selector(".name", text: "Find UFOs")
-    end
   end
 end
